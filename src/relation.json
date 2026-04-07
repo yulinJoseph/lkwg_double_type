@@ -1,0 +1,218 @@
+{
+    "huo": {
+        "name": "火",
+        "attack": {
+            "SuperEffective": ["cao", "bing", "chong", "jixie"],
+            "NotVeryEffective": ["shui", "di", "long"]
+        },
+        "defense": {
+            "SuperEffective": ["shui", "di"],
+            "NotVeryEffective": ["cao", "bing", "meng", "chong", "jixie"]
+        },
+        "path": "assets/type/huo.png"
+    },
+    "shui": {
+        "name": "水",
+        "attack": {
+            "SuperEffective": ["huo", "di", "jixie"],
+            "NotVeryEffective": ["cao", "bing", "long"]
+        },
+        "defense": {
+            "SuperEffective": ["cao", "dian"],
+            "NotVeryEffective": ["huo", "jixie"]
+        },
+        "path": "assets/type/shui.png"
+    },
+    "cao": {
+        "name": "草",
+        "attack": {
+            "SuperEffective": ["guang", "di", "shui"],
+            "NotVeryEffective": ["huo", "du", "chong", "yi", "long", "jixie"]
+        },
+        "defense": {
+            "SuperEffective": ["chong", "huo", "bing", "du", "yi"],
+            "NotVeryEffective": ["shui", "di", "guang", "dian"]
+        },
+        "path": "assets/type/cao.png"
+    },
+    "guang": {
+        "name": "光",
+        "attack": {
+            "SuperEffective": ["you", "e"],
+            "NotVeryEffective": ["cao", "guang"]
+        },
+        "defense": {
+            "SuperEffective": ["you", "cao"],
+            "NotVeryEffective": ["huan", "e"]
+        },
+        "path": "assets/type/guang.png"
+    },
+    "e": {
+        "name": "恶",
+        "attack": {
+            "SuperEffective": ["du", "meng", "you"],
+            "NotVeryEffective": ["guang", "wu", "e"]
+        },
+        "defense": {
+            "SuperEffective": ["guang", "wu", "chong", "meng"],
+            "NotVeryEffective": ["you", "e"]
+        },
+        "path": "assets/type/e.png"
+    },
+    "you": {
+        "name": "幽",
+        "attack": {
+            "SuperEffective": ["guang", "huan", "you"],
+            "NotVeryEffective": ["putong", "e"]
+        },
+        "defense": {
+            "SuperEffective": ["guang", "you", "e"],
+            "NotVeryEffective": ["putong", "du", "chong", "wu"]
+        },
+        "path": "assets/type/you.png"
+    },
+    "putong": {
+        "name": "普通",
+        "attack": {
+            "SuperEffective": [],
+            "NotVeryEffective": ["di", "you", "jixie"]
+        },
+        "defense": {
+            "SuperEffective": ["wu"],
+            "NotVeryEffective": ["you"]
+        },
+        "path": "assets/type/putong.png"
+    },
+    "di": {
+        "name": "地",
+        "attack": {
+            "SuperEffective": ["huo", "bing", "dian", "du"],
+            "NotVeryEffective": ["cao", "wu"]
+        },
+        "defense": {
+            "SuperEffective": ["cao", "shui", "wu", "bing", "jixie"],
+            "NotVeryEffective": ["putong", "huo", "dian", "du", "yi"]
+        },
+        "path": "assets/type/di.png"
+    },
+    "bing": {
+        "name": "冰",
+        "attack": {
+            "SuperEffective": ["cao", "di", "long", "yi"],
+            "NotVeryEffective": ["huo", "bing", "jixie"]
+        },
+        "defense": {
+            "SuperEffective": ["huo", "di", "wu", "jixie"],
+            "NotVeryEffective": ["shui", "guang", "bing"]
+        },
+        "path": "assets/type/bing.png"
+    },
+    "dian": {
+        "name": "电",
+        "attack": {
+            "SuperEffective": ["shui", "yi"],
+            "NotVeryEffective": ["di", "long", "dian", "cao"]
+        },
+        "defense": {
+            "SuperEffective": ["di"],
+            "NotVeryEffective": ["yi", "dian", "jixie"]
+        },
+        "path": "assets/type/dian.png"
+    },
+    "du": {
+        "name": "毒",
+        "attack": {
+            "SuperEffective": ["cao", "meng"],
+            "NotVeryEffective": ["di", "du", "jixie", "you"]
+        },
+        "defense": {
+            "SuperEffective": ["di", "huan", "e"],
+            "NotVeryEffective": ["cao", "du", "chong", "wu", "meng"]
+        },
+        "path": "assets/type/du.png"
+    },
+    "chong": {
+        "name": "虫",
+        "attack": {
+            "SuperEffective": ["cao", "huan", "e"],
+            "NotVeryEffective": ["huo", "du", "wu", "yi", "meng", "you", "jixie"]
+        },
+        "defense": {
+            "SuperEffective": ["yi", "wu"],
+            "NotVeryEffective": ["cao", "wu"]
+        },
+        "path": "assets/type/chong.png"
+    },
+    "wu": {
+        "name": "武",
+        "attack": {
+            "SuperEffective": ["putong", "di", "bing", "e", "jixie"],
+            "NotVeryEffective": ["meng", "du", "chong", "yi", "you", "huan"]
+        },
+        "defense": {
+            "SuperEffective": ["meng", "yi", "huan"],
+            "NotVeryEffective": ["di", "chong", "e"]
+        },
+        "path": "assets/type/wu.png"
+    },
+    "yi": {
+        "name": "翼",
+        "attack": {
+            "SuperEffective": ["cao", "wu", "chong"],
+            "NotVeryEffective": ["di", "long", "dian", "jixie"]
+        },
+        "defense": {
+            "SuperEffective": ["dian", "bing"],
+            "NotVeryEffective": ["cao", "wu", "chong"]
+        },
+        "path": "assets/type/yi.png"
+    },
+    "meng": {
+        "name": "萌",
+        "attack": {
+            "SuperEffective": ["long", "wu", "e"],
+            "NotVeryEffective": ["huo", "du", "jixie"]
+        },
+        "defense": {
+            "SuperEffective": ["e", "du", "jixie"],
+            "NotVeryEffective": ["chong", "wu"]
+        },
+        "path": "assets/type/meng.png"
+    },
+    "jixie": {
+        "name": "机械",
+        "attack": {
+            "SuperEffective": ["bing", "di", "meng"],
+            "NotVeryEffective": ["huo", "shui", "dian", "jixie"]
+        },
+        "defense": {
+            "SuperEffective": ["huo", "shui", "wu"],
+            "NotVeryEffective": ["putong", "du", "bing", "yi", "chong", "meng", "cao", "jixie", "long", "huan"]
+        },
+        "path": "assets/type/jixie.png"
+    },
+    "huan": {
+        "name": "幻",
+        "attack": {
+            "SuperEffective": ["du", "wu"],
+            "NotVeryEffective": ["guang", "jixie", "huan"]
+        },
+        "defense": {
+            "SuperEffective": ["you", "chong"],
+            "NotVeryEffective": ["wu", "huan"]
+        },
+        "path": "assets/type/huan.png"
+    },
+    "long": {
+        "name": "龙",
+        "attack": {
+            "SuperEffective": ["long"],
+            "NotVeryEffective": ["jixie"]
+        },
+        "defense": {
+            "SuperEffective": ["bing", "long", "meng"],
+            "NotVeryEffective": ["cao", "huo", "shui", "dian", "yi"]
+        },
+        "path": "assets/type/long.png"
+    }
+}
