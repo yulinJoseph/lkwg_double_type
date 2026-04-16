@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lkwg_double_type/static/css/main.55f1ed93.css",
-    "main.js": "/lkwg_double_type/static/js/main.aa5d25a2.js",
+    "main.js": "/lkwg_double_type/static/js/main.4f14c58d.js",
     "static/js/453.4b358311.chunk.js": "/lkwg_double_type/static/js/453.4b358311.chunk.js",
     "index.html": "/lkwg_double_type/index.html",
     "main.55f1ed93.css.map": "/lkwg_double_type/static/css/main.55f1ed93.css.map",
-    "main.aa5d25a2.js.map": "/lkwg_double_type/static/js/main.aa5d25a2.js.map",
+    "main.4f14c58d.js.map": "/lkwg_double_type/static/js/main.4f14c58d.js.map",
     "453.4b358311.chunk.js.map": "/lkwg_double_type/static/js/453.4b358311.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55f1ed93.css",
-    "static/js/main.aa5d25a2.js"
+    "static/js/main.4f14c58d.js"
   ]
 }
