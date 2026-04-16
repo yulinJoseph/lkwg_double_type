@@ -43,7 +43,7 @@ function App() {
                     return group;
                 }
                 return { ...group, selected: [...current, key] };
-            })
+            }),
         );
     };
 
@@ -187,6 +187,7 @@ function App() {
     const renderGroup = (group, index) => {
         const slots = groupSlots(group.selected);
         const analysis = analyzeGroup(group.selected);
+        const isDualType = group.selected.length === 2;
 
         return (
             <div
@@ -234,9 +235,9 @@ function App() {
                 <div className="analysis-area">
                     {analysis ? (
                         <>
-                            {renderStrongSection("攻击时克制", analysis.attack.super2, analysis.attack.super4, "克制")}
-                            {renderResistSection("攻击时抵抗", analysis.attack.resistHalf, analysis.attack.resistQuarter, "抵抗")}
+                            {!isDualType ? renderStrongSection("攻击时克制", analysis.attack.super2, analysis.attack.super4, "克制") : null}
                             {renderStrongSection("防御时被克制", analysis.defense.super2, analysis.defense.super4, "被克制")}
+                            {!isDualType ? renderResistSection("攻击时效果不佳", analysis.attack.resistHalf, analysis.attack.resistQuarter, "抵抗") : null}
                             {renderResistSection("防御时抵抗", analysis.defense.resistHalf, analysis.defense.resistQuarter, "抵抗")}
                         </>
                     ) : (
